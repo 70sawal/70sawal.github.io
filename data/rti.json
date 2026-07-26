@@ -196,6 +196,42 @@
         "5. The revenue accruing to the State from the yatra, year-wise since 2017, and the amount transferred to local bodies in the yatra districts.",
         "6. The number of registered homestays in the State, district-wise, and the number recorded as operational in the most recent year."
       ]
+    },
+    {
+      "id": "RTI-12",
+      "theme": "governance",
+      "target": "Public Information Officer, Dehradun Smart City Limited, Dehradun, and Urban Development Department, Government of Uttarakhand",
+      "question_ref": [
+        59,
+        60,
+        61
+      ],
+      "text_en": [
+        "1. The total funds received and expenditure incurred under the Smart City Mission in Dehradun, year-wise since 2018-19.",
+        "2. A list of all projects sanctioned under the Mission, with the sanctioned cost, scheduled completion date and actual completion date of each.",
+        "3. The action taken on each audit observation raised in CAG Report No. 5 of 2025 on Smart Cities, para-wise, together with the departmental reply furnished to each.",
+        "4. The amount, if any, recovered from any agency or official in respect of the irregularities recorded in that report, and from whom.",
+        "5. Copies of the payment terms agreed with the Project Management Consultant, and the total paid to that consultant, year-wise.",
+        "6. The current operational status of the biometric and sensor based solid waste management module, and the dates on which it was commissioned and first used."
+      ]
+    },
+    {
+      "id": "RTI-13",
+      "theme": "environment",
+      "target": "Public Information Officer, Directorate of Geology and Mining, Government of Uttarakhand, and Uttarakhand Forest Development Corporation",
+      "question_ref": [
+        69,
+        70,
+        71
+      ],
+      "text_en": [
+        "1. The number of stone crusher licences granted, renewed and cancelled in the State, district-wise, year-wise since 2017.",
+        "2. The quantity of minor minerals extracted from riverbeds, river-wise, and the royalty realised, year-wise since 2017.",
+        "3. Copies of any orders of the National Green Tribunal or the Supreme Court communicated to the department on riverbed mining since 2017, and the compliance report filed against each.",
+        "4. The number of cases of illegal mining detected, the penalty imposed, and the penalty actually recovered, year-wise since 2017.",
+        "5. Copies of any agreement under which the collection of royalty or the monitoring of mining sites has been assigned to any private agency, together with the order approving it.",
+        "6. The details of any penalty imposed on a government corporation or department for mining in violation of a court or tribunal order, and the amount recovered."
+      ]
     }
   ]
 }
