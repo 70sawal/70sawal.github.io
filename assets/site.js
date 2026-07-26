@@ -43,11 +43,11 @@
         el.classList.toggle('hidden', term !== '' && hay.indexOf(term) === -1);
       };
 
-      // question cards (homepage, theme pages)
-      document.querySelectorAll('#qlist .q').forEach(function (card) {
-        var p = card.querySelector('.qtext');
-        show(card, ((p.dataset.hi || '') + ' ' + (p.dataset.en || '') + ' ' +
-                    card.textContent).toLowerCase());
+      // question cards (theme pages) and tiles (homepage)
+      document.querySelectorAll('#qlist .q, #qlist .tile').forEach(function (card) {
+        var p = card.querySelector('.qtext') || card.querySelector('.thl');
+        var d = p ? ((p.dataset.hi || '') + ' ' + (p.dataset.en || '')) : '';
+        show(card, (d + ' ' + card.textContent).toLowerCase());
       });
 
       // seat rows (constituency index), hide the district block when it empties
