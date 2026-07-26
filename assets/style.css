@@ -96,9 +96,16 @@ h2{font-size:1.05rem;margin:26px 0 4px;color:var(--muted);
 
 .back{display:inline-block;margin:14px 0 0;font-size:.85rem;color:var(--muted);text-decoration:none}
 .back:hover{color:var(--accent)}
-.nav-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;padding:18px 0 4px}
-.nav-cards a{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;
-  padding:14px 16px;text-decoration:none;color:var(--fg)}
-.nav-cards a:hover{border-color:var(--accent)}
-.nav-cards strong{display:block;color:var(--accent);margin-bottom:3px}
-.nav-cards span{font-size:.85rem;color:var(--muted);line-height:1.4}
+.nav-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:11px;padding:20px 0 6px}
+.nav-cards a{display:flex;flex-direction:column;gap:5px;background:var(--card);
+  border:1px solid var(--line);border-radius:14px;padding:16px 18px;
+  text-decoration:none;color:var(--fg);
+  transition:border-color .15s ease, transform .15s ease}
+.nav-cards a:hover{border-color:var(--accent);transform:translateY(-2px)}
+.nav-cards strong{display:flex;align-items:center;justify-content:space-between;
+  gap:10px;font-size:1.02rem;font-weight:700;color:var(--fg);letter-spacing:-.01em}
+.nav-cards strong::after{content:"→";color:var(--accent);font-weight:400;
+  font-size:1.05rem;opacity:.75;transition:transform .15s ease}
+.nav-cards a:hover strong::after{transform:translateX(3px);opacity:1}
+.nav-cards span{font-size:.86rem;color:var(--muted);line-height:1.5}
