@@ -1,13 +1,13 @@
 {
   "_howto": {
-    "hi": "कोई भी भारतीय नागरिक RTI डाल सकता है। फीस सिर्फ़ ₹10। जवाब 30 दिन में आना अनिवार्य है। नीचे दिए गए आवेदन कॉपी-पेस्ट करके भेजें — और जवाब आने पर हमें भेजें, हम प्रकाशित करेंगे।",
-    "en": "Any Indian citizen can file an RTI. The fee is Rs 10. A reply is legally due within 30 days. Copy any application below, file it, and send us the reply — we will publish it with credit or anonymously, your choice.",
+    "hi": "कोई भी भारतीय नागरिक RTI डाल सकता है। फीस सिर्फ़ ₹10। जवाब 30 दिन में आना अनिवार्य है। नीचे दिए गए आवेदन कॉपी-पेस्ट करके भेजें, और जवाब आने पर हमें भेजें, हम प्रकाशित करेंगे।",
+    "en": "Any Indian citizen can file an RTI. The fee is Rs 10. A reply is legally due within 30 days. Copy any application below, file it, and send us the reply, we will publish it with credit or anonymously, your choice.",
     "portals": {
-      "state": "Uttarakhand RTI — file with the PIO of the relevant department, by post or via the state RTI portal",
+      "state": "Uttarakhand RTI, file with the PIO of the relevant department, by post or via the state RTI portal",
       "central": "https://rtionline.gov.in (for central bodies such as CBI)"
     },
-    "golden_rule": "RTI compels disclosure of RECORDS THE DEPARTMENT HOLDS. It does not compel opinions, justifications, or answers to 'why' questions — those get rejected under Section 2(f). Every application below is worded to ask only for records, numbers, copies and dates.",
-    "if_refused": "No reply in 30 days, or an unsatisfactory reply, triggers a First Appeal to the First Appellate Authority in the same department — free, and due within 30 days of the deadline lapsing. Send us refusals too. A refusal is itself content.",
+    "golden_rule": "RTI compels disclosure of RECORDS THE DEPARTMENT HOLDS. It does not compel opinions, justifications, or answers to 'why' questions, those get rejected under Section 2(f). Every application below is worded to ask only for records, numbers, copies and dates.",
+    "if_refused": "No reply in 30 days, or an unsatisfactory reply, triggers a First Appeal to the First Appellate Authority in the same department, free, and due within 30 days of the deadline lapsing. Send us refusals too. A refusal is itself content.",
     "safety": "Filing an RTI puts your name and address on record with the department. Consider that before filing on politically sensitive subjects. We will never publish a filer's identity without explicit permission."
   },
   "applications": [
@@ -29,7 +29,7 @@
     {
       "id": "RTI-02",
       "theme": "rozgaar",
-      "target": "Public Information Officer, Uttarakhand Subordinate Service Selection Commission (UKSSSC), Dehradun — and separately, Uttarakhand Public Service Commission (UKPSC), Haridwar",
+      "target": "Public Information Officer, Uttarakhand Subordinate Service Selection Commission (UKSSSC), Dehradun, and separately, Uttarakhand Public Service Commission (UKPSC), Haridwar",
       "question_ref": [
         2,
         9
@@ -62,7 +62,7 @@
     {
       "id": "RTI-04",
       "theme": "palayan",
-      "target": "Public Information Officer, Directorate of Education (Basic & Secondary), Dehradun — and separately, Directorate of Medical Health & Family Welfare, Dehradun",
+      "target": "Public Information Officer, Directorate of Education (Basic & Secondary), Dehradun, and separately, Directorate of Medical Health & Family Welfare, Dehradun",
       "question_ref": [
         6
       ],
@@ -105,7 +105,7 @@
     {
       "id": "RTI-07",
       "theme": "vaada",
-      "target": "Public Information Officer, Department of Women Empowerment & Child Development, Dehradun — and separately, Social Welfare Department, and Food & Civil Supplies Department, Government of Uttarakhand",
+      "target": "Public Information Officer, Department of Women Empowerment & Child Development, Dehradun, and separately, Social Welfare Department, and Food & Civil Supplies Department, Government of Uttarakhand",
       "question_ref": [
         30,
         31,
@@ -142,7 +142,7 @@
     {
       "id": "RTI-09",
       "theme": "environment",
-      "target": "Public Information Officer, Compensatory Afforestation Fund Management and Planning Authority (CAMPA), Uttarakhand, Dehradun — and separately, Principal Chief Conservator of Forests, Uttarakhand",
+      "target": "Public Information Officer, Compensatory Afforestation Fund Management and Planning Authority (CAMPA), Uttarakhand, Dehradun, and separately, Principal Chief Conservator of Forests, Uttarakhand",
       "question_ref": [
         40,
         41,
@@ -162,7 +162,7 @@
     {
       "id": "RTI-10",
       "theme": "women-safety",
-      "target": "Public Information Officer, Uttarakhand Police Headquarters, Dehradun — and separately, Department of Women Empowerment & Child Development",
+      "target": "Public Information Officer, Uttarakhand Police Headquarters, Dehradun, and separately, Department of Women Empowerment & Child Development",
       "question_ref": [
         47,
         48,
@@ -182,7 +182,7 @@
     {
       "id": "RTI-11",
       "theme": "tourism",
-      "target": "Public Information Officer, Department of Tourism, Government of Uttarakhand, Dehradun — and separately, the District Magistrates of Rudraprayag, Chamoli and Uttarkashi",
+      "target": "Public Information Officer, Department of Tourism, Government of Uttarakhand, Dehradun, and separately, the District Magistrates of Rudraprayag, Chamoli and Uttarkashi",
       "question_ref": [
         51,
         52,

@@ -34,7 +34,7 @@
     });
   });
 
-  // Search — filters already-rendered content. No network, works offline.
+  // Search, filters already-rendered content. No network, works offline.
   var search = document.getElementById('q-search');
   if (search) {
     search.addEventListener('input', function () {
@@ -50,7 +50,7 @@
                     card.textContent).toLowerCase());
       });
 
-      // seat rows (constituency index) — hide the district block when it empties
+      // seat rows (constituency index), hide the district block when it empties
       document.querySelectorAll('#qlist table.seat').forEach(function (tbl) {
         var visible = 0;
         tbl.querySelectorAll('tr').forEach(function (tr, i) {
