@@ -109,3 +109,15 @@ h2{font-size:1.05rem;margin:26px 0 4px;color:var(--muted);
   font-size:1.05rem;opacity:.75;transition:transform .15s ease}
 .nav-cards a:hover strong::after{transform:translateX(3px);opacity:1}
 .nav-cards span{font-size:.86rem;color:var(--muted);line-height:1.5}
+
+.intro{padding:24px 0 4px;display:grid;gap:14px}
+.intro .ib{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 19px}
+.intro h2{font-size:.78rem;margin:0 0 8px;color:var(--accent);text-transform:uppercase;
+  letter-spacing:.09em;font-weight:700}
+.intro p{margin:0 0 9px;font-size:.95rem;line-height:1.62}
+.intro p:last-child{margin-bottom:0}
+.intro .ask{border-left:3px solid var(--accent)}
+.intro ol{margin:0;padding-left:20px}
+.intro ol li{margin-bottom:8px;font-size:.94rem;line-height:1.55}
+.intro ol li:last-child{margin-bottom:0}
+.intro ol li::marker{color:var(--accent);font-weight:700}
