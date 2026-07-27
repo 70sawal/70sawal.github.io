@@ -4,7 +4,7 @@
   "site": "https://70sawal.github.io",
   "licence": "Free to quote, reuse and republish. Attribution appreciated, not required.",
   "generated": "2026-07-28",
-  "count": 91,
+  "count": 94,
   "questions": [
     {
       "no": 1,
@@ -1158,6 +1158,58 @@
       ]
     },
     {
+      "no": "36.1",
+      "id": 98,
+      "parent_id": 46,
+      "theme": "environment",
+      "confidence": "B",
+      "status": "verified",
+      "headline_hi": "भागीरथी इको ज़ोन में 6,822 पेड़",
+      "headline_en": "6,822 trees in the Bhagirathi eco-zone",
+      "question_hi": "दिसंबर 2025 में भागीरथी इको सेंसिटिव ज़ोन में भैरोंघाटी से झाला तक 20.6 किलोमीटर सड़क चौड़ीकरण के लिए 41.92 हेक्टेयर में 6,822 पेड़ काटने की मंज़ूरी दी गई, जिनमें पुराने देवदार भी हैं। धराली में आई आपदा के बाद यह सवाल और बड़ा हो जाता है कि इस मंज़ूरी से पहले भूस्खलन का ताज़ा आकलन कराया गया था या नहीं?",
+      "question_en": "In December 2025, clearance was given to fell 6,822 trees, including old deodars, across 41.92 hectares for widening 20.6 km of road from Bhaironghati to Jhala inside the Bhagirathi eco-sensitive zone. After the Dharali disaster, the question is sharper: was a fresh landslide risk assessment carried out before this clearance was granted?",
+      "rti_ref": "RTI-16",
+      "permalink": "https://70sawal.github.io/q/46/",
+      "sources": [
+        {
+          "title": "Uttarakhand clears 6,822 trees in Bhagirathi eco-zone for Char Dham road, igniting landslide fears after Dharali floods",
+          "outlet": "The Logical Indian",
+          "url": "https://thelogicalindian.com/uttarakhand-clears-6822-trees-in-bhagirathi-eco-zone-for-char-dham-road-igniting-landslide-fears-after-dharali-floods/"
+        },
+        {
+          "title": "Uttarakhand gives in-principle approval for Char Dham road through disaster-prone zone, putting thousands of deodar trees at risk",
+          "outlet": "Down To Earth",
+          "url": "https://www.downtoearth.org.in/governance/uttarakhand-gives-in-principle-approval-for-char-dham-road-through-disaster-prone-zone-putting-thousands-of-deodar-trees-at-risk"
+        }
+      ]
+    },
+    {
+      "no": "36.2",
+      "id": 99,
+      "parent_id": 46,
+      "theme": "environment",
+      "confidence": "B",
+      "status": "verified",
+      "headline_hi": "देहरादून में 4,369 पेड़, रोके गए लोगों ने",
+      "headline_en": "4,369 trees in Dehradun, stopped by residents",
+      "question_hi": "देहरादून के सात मोड़ पर ₹743 करोड़ की सड़क परियोजना के लिए 4,369 पेड़ काटे जाने थे। स्थानीय लोगों के विरोध के बाद कटान रुका। सवाल यह है कि इस परियोजना की मंज़ूरी से पहले कोई सार्वजनिक सुनवाई हुई थी या नहीं, और उसका रिकॉर्ड कहाँ है?",
+      "question_en": "A Rs 743 crore road project at Saat Mod in Dehradun required 4,369 trees to be felled. The felling was halted after residents protested. Was any public consultation held before the project was cleared, and where is the record of it?",
+      "rti_ref": "RTI-16",
+      "permalink": "https://70sawal.github.io/q/46/",
+      "sources": [
+        {
+          "title": "Residents, activists converge on Saat Mod in Dehradun, as authorities prepare to fell 4,369 trees",
+          "outlet": "Down To Earth",
+          "url": "https://www.downtoearth.org.in/forests/residents-activists-converge-on-saat-mod-in-dehradun-as-authorities-prepare-to-fell-4369-trees"
+        },
+        {
+          "title": "Dehradun residents halt felling of 4,369 trees for Rs 743-crore project",
+          "outlet": "The Better India",
+          "url": "https://thebetterindia.com/changemakers/saat-mod-dehradun-tree-felling-protest-halted-12194201"
+        }
+      ]
+    },
+    {
       "no": 37,
       "id": 47,
       "parent_id": "",
@@ -1482,6 +1534,27 @@
           "title": "CAG flags irregularities worth Rs 60 crore in Dehradun Smart City Project",
           "outlet": "The Statesman",
           "url": "https://www.thestatesman.com/india/cag-plugs-irregularities-worth-rs-60-crore-in-dehradun-smart-city-project-1503569019.html"
+        }
+      ]
+    },
+    {
+      "no": "45.2",
+      "id": 95,
+      "parent_id": 59,
+      "theme": "governance",
+      "confidence": "A",
+      "status": "verified",
+      "headline_hi": "ई-रिक्शा ख़रीदे गए, चले कभी नहीं",
+      "headline_en": "E-rickshaws bought, never run",
+      "question_hi": "स्मार्ट सिटी के तहत कूड़ा ढोने के लिए ख़रीदे गए ई-रिक्शा क़रीब दो साल तक खड़े रहे। CAG इसे योजना की कमी बताता है और ख़र्च ₹0.90 करोड़ दर्ज करता है। सवाल यह है कि ख़रीदने से पहले यह क्यों नहीं देखा गया कि ये कहाँ और कैसे चलेंगे?",
+      "question_en": "E-rickshaws procured under the smart waste vehicles project stood idle for nearly two years. The CAG records the cost as Rs 0.90 crore and attributes the outcome to a lack of planning. Why was it not established before purchase where and how these vehicles would actually be used?",
+      "rti_ref": "RTI-12",
+      "permalink": "https://70sawal.github.io/q/59/",
+      "sources": [
+        {
+          "title": "Report No. 5 of 2025, Performance Audit of Smart Cities Mission, Uttarakhand (covers 2018-23)",
+          "outlet": "Comptroller and Auditor General of India",
+          "url": "https://cag.gov.in/uploads/download_audit_report/2025/Report-No.-05-Smart-Cities-UK---19-11-2025-signed-069b02aa24e1a16.54541284.pdf"
         }
       ]
     },
