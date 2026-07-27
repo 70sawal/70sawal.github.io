@@ -158,3 +158,9 @@ h2{font-size:1.05rem;margin:26px 0 4px;color:var(--muted);
 .tnum{font-size:1.25rem;font-weight:700;color:var(--accent);line-height:1;min-width:1.2em}
 .thl{font-size:1rem;font-weight:600;line-height:1.45;letter-spacing:-.01em}
 @media(max-width:420px){.tiles{grid-template-columns:1fr}}
+
+.kids{margin:6px 0 18px}
+.kid{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--accent);
+  border-radius:0 12px 12px 0;padding:14px 17px;margin-bottom:10px}
+.kid .qtext{font-size:.96rem;margin:0 0 8px}
+.kid .src{font-size:.8rem}
