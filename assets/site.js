@@ -1,6 +1,33 @@
 (function () {
   var LANG = localStorage.getItem('lang') || 'hi';
 
+  // Theme: unset means follow the system. Once chosen, the choice sticks.
+  var root = document.documentElement;
+  var saved = localStorage.getItem('theme');
+  if (saved === 'dark' || saved === 'light') root.setAttribute('data-theme', saved);
+
+  function currentTheme() {
+    var t = root.getAttribute('data-theme');
+    if (t) return t;
+    return window.matchMedia &&
+           window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  var tbtn = document.getElementById('theme');
+  function paintThemeBtn() {
+    if (tbtn) tbtn.textContent = currentTheme() === 'dark' ? '☀' : '☾';
+  }
+  if (tbtn) {
+    tbtn.addEventListener('click', function () {
+      var next = currentTheme() === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      paintThemeBtn();
+    });
+    paintThemeBtn();
+  }
+
+
   function applyLang() {
     document.querySelectorAll('[data-hi]').forEach(function (el) {
       var t = LANG === 'hi' ? el.dataset.hi : el.dataset.en;
