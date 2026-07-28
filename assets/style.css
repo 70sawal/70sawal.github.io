@@ -178,3 +178,10 @@ h2{font-size:1.05rem;margin:26px 0 4px;color:var(--muted);
   line-height:1;min-width:38px}
 .themebtn:hover{border-color:var(--accent)}
 .hdrbtns{display:flex;gap:7px;align-items:center}
+
+
+/* Wide tables scroll inside their own box. Without this the whole page scrolls
+   sideways on a phone and the header drifts off screen, which is what every
+   seat page did. */
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+.scroll table{min-width:max-content}
