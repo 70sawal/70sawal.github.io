@@ -193,4 +193,17 @@ h2{font-size:1.05rem;margin:26px 0 4px;color:var(--muted);
 
 /* the accent bar the posts use, so the site is recognisably the same thing */
 header{border-bottom:3px solid var(--accent)}
-.brand .num{color:var(--accent2)}
+.brand .num{
+  /* Real #FFD700, in both modes. On white it fails contrast as plain text, so
+     in light mode it sits on a near-black chip instead of being darkened to an
+     olive that no longer reads as yellow. */
+  color:#FFD700;
+}
+:root[data-theme="light"] .brand .num{
+  background:#0A0A0A;padding:0 .28em .06em;border-radius:.22em;
+}
+@media (prefers-color-scheme:light){
+  :root:not([data-theme="dark"]) .brand .num{
+    background:#0A0A0A;padding:0 .28em .06em;border-radius:.22em;
+  }
+}
