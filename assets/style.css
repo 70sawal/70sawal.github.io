@@ -1,17 +1,21 @@
 :root{
-  --bg:#F4F1EA; --fg:#17171A; --muted:#6b635a; --line:#e2ddd5;
-  --accent:#b03a2e; --card:#fff; --chip:#f2eee8;
-  --ok:#2e6b46; --warn:#8a6a1f;
+  /* Dark is the default now, matching the posts: near black ground, fiery red
+     accent, electric yellow for anything that must be seen first. Light mode
+     keeps both accents at darker steps so they stay legible on white. */
+  --bg:#0A0A0A; --fg:#FFFFFF; --muted:#C9C9CE; --line:#26262B;
+  --accent:#FF0033; --accent2:#FFD700; --card:#141416; --chip:#1C1C20;
+  --ok:#6cc08d; --warn:#FFD700;
   --sans:"Noto Sans Devanagari","Nirmala UI","Segoe UI",system-ui,-apple-system,sans-serif;
 }
-@media (prefers-color-scheme:dark){
-  :root{--bg:#17171A;--fg:#F4F1EA;--muted:#A9A9B2;--line:#33333A;
-        --accent:#e8705c;--card:#202024;--chip:#26262B;--ok:#6cc08d;--warn:#d8b45a}
+@media (prefers-color-scheme:light){
+  :root:not([data-theme="dark"]){--bg:#FFFFFF;--fg:#0A0A0A;--muted:#4A4A52;--line:#E2E2DE;
+        --accent:#D4002A;--accent2:#7A6000;--card:#F7F7F5;--chip:#EFEFEC;
+        --ok:#2e6b46;--warn:#7A6000}
 }
-:root[data-theme="dark"]{--bg:#17171A;--fg:#F4F1EA;--muted:#A9A9B2;--line:#33333A;
-  --accent:#e8705c;--card:#202024;--chip:#26262B;--ok:#6cc08d;--warn:#d8b45a}
-:root[data-theme="light"]{--bg:#F4F1EA;--fg:#17171A;--muted:#6b635a;--line:#e2ddd5;
-  --accent:#b03a2e;--card:#fff;--chip:#f2eee8;--ok:#2e6b46;--warn:#8a6a1f}
+:root[data-theme="dark"]{--bg:#0A0A0A;--fg:#FFFFFF;--muted:#C9C9CE;--line:#26262B;
+  --accent:#FF0033;--accent2:#FFD700;--card:#141416;--chip:#1C1C20;--ok:#6cc08d;--warn:#FFD700}
+:root[data-theme="light"]{--bg:#FFFFFF;--fg:#0A0A0A;--muted:#4A4A52;--line:#E2E2DE;--accent2:#7A6000;
+  --accent:#D4002A;--card:#F7F7F5;--chip:#EFEFEC;--ok:#2e6b46;--warn:#7A6000}
 
 a{color:var(--accent)}
 a:hover{text-decoration:underline}
@@ -146,9 +150,9 @@ h2{font-size:1.05rem;margin:26px 0 4px;color:var(--muted);
   .bar-fill{background:#e8705c}
   .bar-row.far .bar-fill{background:#8a8279}
 }
-:root[data-theme="dark"] .bar-fill{background:#e8705c}
+:root[data-theme="dark"] .bar-fill{background:#FFD700}
 :root[data-theme="dark"] .bar-row.far .bar-fill{background:#8a8279}
-:root[data-theme="light"] .bar-fill{background:#b03a2e}
+:root[data-theme="light"] .bar-fill{background:#D4002A}
 :root[data-theme="light"] .bar-row.far .bar-fill{background:#8f8880}
 
 .tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:11px}
@@ -185,3 +189,8 @@ h2{font-size:1.05rem;margin:26px 0 4px;color:var(--muted);
    seat page did. */
 .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
 .scroll table{min-width:max-content}
+
+
+/* the accent bar the posts use, so the site is recognisably the same thing */
+header{border-bottom:3px solid var(--accent)}
+.brand .num{color:var(--accent2)}
