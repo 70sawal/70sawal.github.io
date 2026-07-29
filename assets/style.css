@@ -194,16 +194,13 @@ h2{font-size:1.05rem;margin:26px 0 4px;color:var(--muted);
 /* the accent bar the posts use, so the site is recognisably the same thing */
 header{border-bottom:3px solid var(--accent)}
 .brand .num{
-  /* Real #FFD700, in both modes. On white it fails contrast as plain text, so
-     in light mode it sits on a near-black chip instead of being darkened to an
-     olive that no longer reads as yellow. */
+  /* Dark mode gets the real #FFD700. On white that is 1.4:1 and unreadable, so
+     light mode uses #B8860B: the most yellow tone that still clears 3:1 for
+     large bold text. It reads as gold rather than the olive #7A6000 did, and it
+     needs no chip behind it. */
   color:#FFD700;
 }
-:root[data-theme="light"] .brand .num{
-  background:#0A0A0A;padding:0 .28em .06em;border-radius:.22em;
-}
+:root[data-theme="light"] .brand .num{color:#B8860B}
 @media (prefers-color-scheme:light){
-  :root:not([data-theme="dark"]) .brand .num{
-    background:#0A0A0A;padding:0 .28em .06em;border-radius:.22em;
-  }
+  :root:not([data-theme="dark"]) .brand .num{color:#B8860B}
 }
