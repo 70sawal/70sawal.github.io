@@ -204,3 +204,45 @@ header{border-bottom:3px solid var(--accent)}
 @media (prefers-color-scheme:light){
   :root:not([data-theme="dark"]) .brand .num{color:#B8860B}
 }
+
+
+/* The triad only appears where it is true: a seat page really does have one
+   constituency, one sitting MLA and its question. It is deliberately not in the
+   masthead, where it would claim the same of all 70 questions when only one of
+   them is about an MLA. */
+.triad{font-size:.82rem;letter-spacing:.08em;text-transform:none;color:var(--accent2);
+  font-weight:700;margin:0 0 .2rem}
+
+
+/* ---------------------------------------------------------------- homepage
+   Evidence first. The page used to open with five blocks about who we are,
+   which is the wrong thing to show a sceptic or a reporter in the first
+   thirty seconds. */
+.lead{border-bottom:3px solid var(--accent);padding:1.6rem 0 1.9rem;margin-bottom:1.6rem}
+.lead .kicker{color:var(--accent);font-weight:700;font-size:.78rem;letter-spacing:.12em;
+  text-transform:uppercase;margin:0 0 .4rem}
+.bignum{font-size:clamp(4.2rem,17vw,8rem);line-height:.92;font-weight:800;
+  color:var(--accent2);margin:0 0 .5rem;letter-spacing:-.03em}
+.bigtext{font-size:clamp(1.05rem,4.2vw,1.5rem);font-weight:700;margin:0 0 .6rem;max-width:26em}
+.bigsrc{color:var(--muted);font-size:.9rem;margin:0}
+.promise h1{margin:0 0 .3rem}
+.presslink{margin:.6rem 0 0;font-size:.9rem}
+.presslink a{color:var(--muted)}
+
+/* four figures, each one a door into a question */
+.figures{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:.7rem;margin:1.8rem 0}
+.figures a{display:block;padding:.9rem 1rem;background:var(--card);
+  border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--fg)}
+.figures a:hover{border-color:var(--accent)}
+.figures b{display:block;font-size:1.7rem;color:var(--accent2);line-height:1.1;margin-bottom:.25rem}
+.figures span{display:block;color:var(--muted);font-size:.82rem;line-height:1.35}
+
+/* the most personal thing on the site, previously buried in a nav card */
+.seatcta{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);
+  border-radius:10px;padding:1.2rem 1.3rem;margin:1.8rem 0}
+.seatcta h2{margin:0 0 .35rem}
+.seatcta p{margin:0 0 .8rem;color:var(--muted)}
+.btn{display:inline-block;background:var(--accent);color:#fff;font-weight:700;
+  padding:.6rem 1.1rem;border-radius:8px;text-decoration:none}
+.btn:hover{filter:brightness(1.1)}
