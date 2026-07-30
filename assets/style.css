@@ -273,3 +273,13 @@ header{border-bottom:3px solid var(--accent)}
   .bval{grid-area:val}
   .btrack{grid-area:bar;height:16px;margin-bottom:5px}
 }
+
+/* The triad explains the name, so only the words translate: the 70s are markup
+   the language toggle must not touch, since it swaps textContent. */
+.triadh{display:flex;flex-wrap:wrap;align-items:baseline;gap:.15em .45em;
+  font-size:2.1rem;line-height:1.15;margin:14px 0 6px}
+.tpart{white-space:nowrap}
+.tpart .num{margin-right:.16em}
+.tsep{color:var(--muted);font-weight:400}
+.triadwhy{color:var(--muted);font-size:.95rem;margin:0 0 14px}
+@media(max-width:480px){.triadh{font-size:1.7rem}}
