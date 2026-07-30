@@ -1,3 +1,7 @@
+@font-face{font-family:Poppins;src:url(fonts/poppins-400.woff2) format("woff2");
+  font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:Poppins;src:url(fonts/poppins-700.woff2) format("woff2");
+  font-weight:700;font-style:normal;font-display:swap}
 :root{
   /* Dark is the default now, matching the posts: near black ground, fiery red
      accent, electric yellow for anything that must be seen first. Light mode
@@ -5,7 +9,7 @@
   --bg:#0A0A0A; --fg:#FFFFFF; --muted:#C9C9CE; --line:#26262B;
   --accent:#FF0033; --accent2:#FFD700; --card:#141416; --chip:#1C1C20;
   --ok:#6cc08d; --warn:#FFD700;
-  --sans:"Noto Sans Devanagari","Nirmala UI","Segoe UI",system-ui,-apple-system,sans-serif;
+  --sans:Poppins,"Noto Sans Devanagari","Nirmala UI",system-ui,-apple-system,sans-serif;
 }
 @media (prefers-color-scheme:light){
   :root:not([data-theme="dark"]){--bg:#FFFFFF;--fg:#0A0A0A;--muted:#4A4A52;--line:#E2E2DE;
