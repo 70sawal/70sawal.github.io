@@ -255,3 +255,21 @@ header{border-bottom:3px solid var(--accent)}
 .asof{font-size:.78rem;color:var(--muted);margin:0 0 9px;font-style:italic}
 .nonvote{border-left:3px solid var(--accent2)}
 .bignum2{font-size:2.6rem;font-weight:700;color:var(--accent);line-height:1;margin:0 0 8px;letter-spacing:-.02em}
+
+/* Charts drawn as text, not pictures: they translate, reflow and invert. */
+.dchart{padding:26px 0;border-top:1px solid var(--line)}
+.dchart h2{font-size:1.25rem;margin:0 0 4px;color:var(--fg);text-transform:none;letter-spacing:-.01em}
+.bars{list-style:none;margin:16px 0 12px;padding:0;display:grid;gap:9px}
+.bars li{display:grid;grid-template-columns:minmax(88px,26%) 1fr auto;align-items:center;gap:10px}
+.blab{font-size:.86rem;color:var(--fg);text-align:right;font-weight:600;overflow-wrap:anywhere}
+.btrack{background:var(--chip);border-radius:5px;height:20px;overflow:hidden}
+.bfill{display:block;height:100%;background:var(--accent);border-radius:5px}
+.bfill.dim{background:var(--muted);opacity:.5}
+.bval{font-size:.86rem;font-weight:700;color:var(--fg);white-space:nowrap}
+.dnote{font-size:.9rem;color:var(--muted);margin:10px 0 8px;line-height:1.6}
+@media(max-width:520px){
+  .bars li{grid-template-columns:1fr auto;grid-template-areas:"lab val" "bar bar";gap:3px 8px}
+  .blab{grid-area:lab;text-align:left}
+  .bval{grid-area:val}
+  .btrack{grid-area:bar;height:16px;margin-bottom:5px}
+}
