@@ -3,12 +3,16 @@
 @font-face{font-family:Poppins;src:url(fonts/poppins-700.woff2) format("woff2");
   font-weight:700;font-style:normal;font-display:swap}
 :root{
-  /* Dark is the default now, matching the posts: near black ground, fiery red
-     accent, electric yellow for anything that must be seen first. Light mode
-     keeps both accents at darker steps so they stay legible on white. */
-  --bg:#0A0A0A; --fg:#FFFFFF; --muted:#C9C9CE; --line:#26262B;
-  --accent:#FF0033; --accent2:#FFD700; --card:#141416; --chip:#1C1C20;
-  --ok:#6cc08d; --warn:#FFD700;
+  /* Dark is the default, matching the posts. The ground is lifted off pure black
+     and the text pulled off pure white: #FFF on #0A0A0A measured 19.8:1, which is
+     where halation and eye strain come from. This set lands body text at 12.8:1,
+     comfortable and still far above the 4.5:1 floor. The red and gold keep their
+     hue but drop a step in luminance, because a fully saturated accent on a
+     near-black ground glares. The posters keep the pure brand colours: a slide is
+     looked at for a second, a page is read for minutes. Light mode is unchanged. */
+  --bg:#151518; --fg:#D8D8DE; --muted:#9C9CA6; --line:#2B2B33;
+  --accent:#FF3D5C; --accent2:#E6C243; --card:#1D1D22; --chip:#26262D;
+  --ok:#63B183; --warn:#E6C243;
   --sans:Poppins,"Noto Sans Devanagari","Nirmala UI",system-ui,-apple-system,sans-serif;
 }
 @media (prefers-color-scheme:light){
@@ -16,8 +20,8 @@
         --accent:#D4002A;--accent2:#7A6000;--card:#F7F7F5;--chip:#EFEFEC;
         --ok:#2e6b46;--warn:#7A6000}
 }
-:root[data-theme="dark"]{--bg:#0A0A0A;--fg:#FFFFFF;--muted:#C9C9CE;--line:#26262B;
-  --accent:#FF0033;--accent2:#FFD700;--card:#141416;--chip:#1C1C20;--ok:#6cc08d;--warn:#FFD700}
+:root[data-theme="dark"]{--bg:#151518;--fg:#D8D8DE;--muted:#9C9CA6;--line:#2B2B33;
+  --accent:#FF3D5C;--accent2:#E6C243;--card:#1D1D22;--chip:#26262D;--ok:#63B183;--warn:#E6C243}
 :root[data-theme="light"]{--bg:#FFFFFF;--fg:#0A0A0A;--muted:#4A4A52;--line:#E2E2DE;--accent2:#7A6000;
   --accent:#D4002A;--card:#F7F7F5;--chip:#EFEFEC;--ok:#2e6b46;--warn:#7A6000}
 
