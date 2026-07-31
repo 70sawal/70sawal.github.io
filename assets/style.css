@@ -240,13 +240,17 @@ header{border-bottom:3px solid var(--accent)}
 .presslink a{color:var(--muted)}
 
 /* four figures, each one a door into a question */
-.figures{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-  gap:.7rem;margin:1.8rem 0}
-.figures a{display:block;padding:.9rem 1rem;background:var(--card);
-  border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--fg)}
-.figures a:hover{border-color:var(--accent)}
-.figures b{display:block;font-size:1.7rem;color:var(--accent2);line-height:1.1;margin-bottom:.25rem}
-.figures span{display:block;color:var(--muted);font-size:.82rem;line-height:1.35}
+/* These are the hook. A number set at body size is not a hook, so they run large
+   and the sentence under each stays small enough not to compete. */
+.figures{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:.8rem;margin:1.6rem 0}
+.figures a{display:block;padding:1.35rem 1.3rem;background:var(--card);
+  border:1px solid var(--line);border-radius:14px;text-decoration:none;color:var(--fg);
+  transition:border-color .15s ease, transform .15s ease}
+.figures a:hover{border-color:var(--accent);transform:translateY(-2px)}
+.figures b{display:block;font-size:clamp(2.4rem,7vw,3.3rem);color:var(--accent2);
+  line-height:1;margin-bottom:.5rem;letter-spacing:-.03em;font-weight:800}
+.figures span{display:block;color:var(--muted);font-size:.9rem;line-height:1.45}
 
 /* the most personal thing on the site, previously buried in a nav card */
 .seatcta{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);
