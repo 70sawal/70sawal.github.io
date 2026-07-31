@@ -96,4 +96,15 @@
   }
 
   applyLang();
+
+  // copy-link buttons in the share row
+  document.querySelectorAll('.copybtn2').forEach(function (b) {
+    b.addEventListener('click', function () {
+      navigator.clipboard.writeText(b.getAttribute('data-copy')).then(function () {
+        var old = b.textContent;
+        b.textContent = LANG === 'hi' ? 'कॉपी हो गया ✓' : 'Copied ✓';
+        setTimeout(function () { b.textContent = old; }, 1600);
+      });
+    });
+  });
 })();

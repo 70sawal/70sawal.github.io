@@ -288,3 +288,18 @@ header{border-bottom:3px solid var(--accent)}
 .triadwhy{color:var(--muted);font-size:.95rem;margin:0 0 14px}
 @media(max-width:480px){.triadh{font-size:1.7rem}}
 nav a.navhome{border-color:var(--accent);color:var(--accent);font-weight:600}
+
+/* Share row. Plain anchors, so WhatsApp and Telegram work with JS off; only the
+   copy button needs script and it is additive. */
+.sharerow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:20px 0 6px}
+.sharelab{font-size:.85rem;color:var(--muted)}
+.sh{font-size:.85rem;text-decoration:none;background:var(--chip);color:var(--fg);
+  border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-family:inherit;cursor:pointer}
+.sh:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
+.sh.wa{border-color:#25D366;color:#25D366}
+.sh.wa:hover{background:#25D366;color:#07130c;border-color:#25D366}
+.sh.tg{border-color:#2AABEE;color:#2AABEE}
+.sh.tg:hover{background:#2AABEE;color:#04121a;border-color:#2AABEE}
+@media(max-width:420px){.sh{padding:8px 12px}}
+/* Roman name kept beside the Devanagari one so the search box matches either. */
+.rom{font-size:.72rem;color:var(--muted);margin-left:7px;font-weight:400}
