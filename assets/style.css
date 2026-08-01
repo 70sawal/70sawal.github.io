@@ -341,3 +341,6 @@ nav a.navhome{border-color:var(--accent);color:var(--accent);font-weight:600}
   font-size:1.5rem;color:var(--accent);line-height:1}
 .method h3{margin:0 0 6px;font-size:1.05rem;line-height:1.35}
 .method p{margin:0;color:var(--muted);font-size:.94rem;line-height:1.65}
+.fsocial a{display:inline-flex;align-items:center;gap:7px}
+.si{display:inline-flex;width:18px;height:18px;flex:0 0 18px}
+.si svg{width:100%;height:100%;display:block}
