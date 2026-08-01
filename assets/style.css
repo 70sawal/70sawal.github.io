@@ -108,6 +108,10 @@ table.seat th{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;col
 table.seat td a{color:var(--accent);text-decoration:none;font-weight:600}
 table.seat td a:hover{text-decoration:underline}
 table.seat tr.win td{background:var(--chip)}
+table.seat td.n{text-align:right;font-variant-numeric:tabular-nums}
+table.seat th.n{text-align:right}
+table.seat tr.nota td{background:var(--chip);font-style:italic}
+table.seat td.rk{color:var(--muted);font-size:.8rem}
 h2{font-size:1.05rem;margin:26px 0 4px;color:var(--muted);
    text-transform:uppercase;letter-spacing:.06em;font-weight:600}
 
