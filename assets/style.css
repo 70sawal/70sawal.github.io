@@ -281,6 +281,7 @@ header{border-bottom:3px solid var(--accent)}
 .blab{font-size:.86rem;color:var(--fg);text-align:right;font-weight:600;overflow-wrap:anywhere}
 .btrack{background:var(--chip);border-radius:5px;height:20px;overflow:hidden}
 .bfill{display:block;height:100%;background:var(--accent);border-radius:5px}
+.bfill.up{background:var(--accent2)}
 .bfill.dim{background:var(--muted);opacity:.5}
 .bval{font-size:.86rem;font-weight:700;color:var(--fg);white-space:nowrap}
 .dnote{font-size:.9rem;color:var(--muted);margin:10px 0 8px;line-height:1.6}
