@@ -11,19 +11,19 @@
      near-black ground glares. The posters keep the pure brand colours: a slide is
      looked at for a second, a page is read for minutes. Light mode is unchanged. */
   --bg:#151518; --fg:#D8D8DE; --muted:#9C9CA6; --line:#2B2B33;
-  --accent:#FF3D5C; --accent2:#E6C243; --card:#1D1D22; --chip:#26262D;
+  --accent:#FF3D5C; --accent2:#E6C243; --card:#1D1D22; --chip:#26262D; --barhi:#6BA8E5;
   --ok:#63B183; --warn:#E6C243;
   --sans:Poppins,"Noto Sans Devanagari","Nirmala UI",system-ui,-apple-system,sans-serif;
 }
 @media (prefers-color-scheme:light){
   :root:not([data-theme="dark"]){--bg:#FFFFFF;--fg:#0A0A0A;--muted:#4A4A52;--line:#E2E2DE;
-        --accent:#D4002A;--accent2:#7A6000;--card:#F7F7F5;--chip:#EFEFEC;
+        --accent:#D4002A;--accent2:#7A6000;--card:#F7F7F5;--chip:#EFEFEC;--barhi:#1257A0;
         --ok:#2e6b46;--warn:#7A6000}
 }
 :root[data-theme="dark"]{--bg:#151518;--fg:#D8D8DE;--muted:#9C9CA6;--line:#2B2B33;
-  --accent:#FF3D5C;--accent2:#E6C243;--card:#1D1D22;--chip:#26262D;--ok:#63B183;--warn:#E6C243}
+  --accent:#FF3D5C;--accent2:#E6C243;--card:#1D1D22;--chip:#26262D;--ok:#63B183;--warn:#E6C243;--barhi:#6BA8E5}
 :root[data-theme="light"]{--bg:#FFFFFF;--fg:#0A0A0A;--muted:#4A4A52;--line:#E2E2DE;--accent2:#7A6000;
-  --accent:#D4002A;--card:#F7F7F5;--chip:#EFEFEC;--ok:#2e6b46;--warn:#7A6000}
+  --accent:#D4002A;--card:#F7F7F5;--chip:#EFEFEC;--ok:#2e6b46;--warn:#7A6000;--barhi:#1257A0}
 
 a{color:var(--accent)}
 a:hover{text-decoration:underline}
@@ -281,7 +281,9 @@ header{border-bottom:3px solid var(--accent)}
 .blab{font-size:.86rem;color:var(--fg);text-align:right;font-weight:600;overflow-wrap:anywhere}
 .btrack{background:var(--chip);border-radius:5px;height:20px;overflow:hidden}
 .bfill{display:block;height:100%;background:var(--accent);border-radius:5px}
-.bfill.up{background:var(--accent2)}
+.bfill.up{background:var(--barhi)}
+.bkey{display:flex;align-items:center;gap:7px;margin:0 0 4px;font-size:.82rem;color:var(--fg)}
+.bswatch{width:22px;height:10px;border-radius:3px;background:var(--barhi);flex:none}
 .bfill.dim{background:var(--muted);opacity:.5}
 .bval{font-size:.86rem;font-weight:700;color:var(--fg);white-space:nowrap}
 .dnote{font-size:.9rem;color:var(--muted);margin:10px 0 8px;line-height:1.6}
