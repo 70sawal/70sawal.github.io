@@ -344,3 +344,4 @@ nav a.navhome{border-color:var(--accent);color:var(--accent);font-weight:600}
 .fsocial a{display:inline-flex;align-items:center;gap:7px}
 .si{display:inline-flex;width:18px;height:18px;flex:0 0 18px}
 .si svg{width:100%;height:100%;display:block}
+.mandate{border-left:3px solid var(--accent2)}
