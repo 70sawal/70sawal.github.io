@@ -325,3 +325,19 @@ nav a.navhome{border-color:var(--accent);color:var(--accent);font-weight:600}
 .qbig{font-size:clamp(1.7rem,6.2vw,2.7rem);line-height:1.2;font-weight:800;
   letter-spacing:-.02em;margin:0 0 20px;max-width:20em}
 .qbig .fig{color:var(--accent2)}
+
+/* Footer: handles, the standing links, and the licence in one line. */
+.ftag{margin:0 0 12px;font-weight:600;color:var(--fg)}
+.fsocial,.flinks{list-style:none;display:flex;flex-wrap:wrap;gap:6px 16px;margin:0 0 12px;padding:0}
+.fsocial a,.flinks a{color:var(--muted);text-decoration:none;font-size:.85rem}
+.fsocial a:hover,.flinks a:hover{color:var(--accent)}
+.fcopy{font-size:.78rem;line-height:1.6;color:var(--muted);margin:14px 0 0;
+  padding-top:12px;border-top:1px solid var(--line);max-width:60em}
+.method{counter-reset:m;list-style:none;padding:0;margin:22px 0}
+.method li{counter-increment:m;position:relative;padding:0 0 20px 46px;margin-bottom:20px;
+  border-bottom:1px solid var(--line)}
+.method li:last-child{border-bottom:0}
+.method li::before{content:counter(m);position:absolute;left:0;top:0;font-weight:800;
+  font-size:1.5rem;color:var(--accent);line-height:1}
+.method h3{margin:0 0 6px;font-size:1.05rem;line-height:1.35}
+.method p{margin:0;color:var(--muted);font-size:.94rem;line-height:1.65}
