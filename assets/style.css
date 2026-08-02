@@ -95,6 +95,11 @@ details li{margin-bottom:7px;font-size:.94rem}
   padding:13px 17px;margin:15px 0;font-size:.92rem}
 .callout a{color:var(--accent);text-decoration:none}
 .callout.warn{border-left-color:var(--warn)}
+.callout.ok{border-left-color:var(--ok)}
+.anslabel{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;
+  color:var(--muted);margin:0 0 6px}
+.callout.ok .anslabel{color:var(--ok)}
+.callout.warn .anslabel{color:var(--warn)}
 .empty{color:var(--muted);font-style:italic;padding:24px 0}
 
 footer{padding:28px 0 60px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);margin-top:20px}
