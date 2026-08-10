@@ -362,3 +362,41 @@ nav a.navhome{border-color:var(--accent);color:var(--accent);font-weight:600}
 .si{display:inline-flex;width:18px;height:18px;flex:0 0 18px}
 .si svg{width:100%;height:100%;display:block}
 .mandate{border-left:3px solid var(--accent2)}
+
+/* District grid: a schematic, not a map. Tiles sit in roughly geographic
+   positions without drawing a single boundary, which keeps the page clear of
+   the disputed sector on the Nepal and China border. Below 640px the
+   arrangement stops meaning anything, so the placement is dropped and the
+   tiles simply flow. */
+.zgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin:18px 0}
+.zt{display:flex;flex-direction:column;gap:4px;background:var(--card);
+  border:1px solid var(--line);border-radius:12px;padding:12px 12px 11px;
+  text-decoration:none;transition:border-color .15s,transform .15s}
+.zt:hover{border-color:var(--accent);transform:translateY(-2px)}
+.zt b{font-size:.94rem;color:var(--fg);line-height:1.25}
+.zt span{font-size:.78rem;color:var(--muted)}
+.zt .zn{font-variant-numeric:tabular-nums;color:var(--accent);font-weight:600}
+.zp12{grid-area:1/2}.zp13{grid-area:1/3}.zp14{grid-area:1/4}
+.zp21{grid-area:2/1}.zp22{grid-area:2/2}.zp23{grid-area:2/3}.zp24{grid-area:2/4}
+.zp31{grid-area:3/1}.zp32{grid-area:3/2}.zp33{grid-area:3/3}.zp34{grid-area:3/4}
+.zp43{grid-area:4/3}.zp44{grid-area:4/4}
+.zlegend{font-size:.78rem;color:var(--muted);margin:-6px 0 16px}
+.statrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(128px,1fr));
+  gap:9px;margin:14px 0 18px}
+.statrow div{background:var(--card);border:1px solid var(--line);
+  border-radius:10px;padding:10px 12px}
+.statrow b{display:block;font-size:1.28rem;color:var(--accent);
+  font-variant-numeric:tabular-nums;line-height:1.2}
+.statrow span{font-size:.76rem;color:var(--muted)}
+.yr{border-left:2px solid var(--line);padding:0 0 4px 14px;margin:0 0 4px}
+.yr h3{font-size:1.15rem;margin:0 0 2px;font-variant-numeric:tabular-nums}
+.yr .cm{font-size:.8rem;color:var(--muted);margin:0 0 8px}
+.yr ul{list-style:none;padding:0;margin:0 0 14px}
+.yr li{font-size:.9rem;line-height:1.55;margin:0 0 7px;color:var(--fg)}
+.yr li em{font-style:normal;color:var(--muted);font-size:.8rem;
+  display:block;margin-top:1px}
+.yr.quiet .cm{margin-bottom:14px}
+@media(max-width:640px){
+  .zgrid{grid-template-columns:repeat(2,1fr)}
+  .zgrid a[class*="zp"]{grid-area:auto}
+}
